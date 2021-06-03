@@ -25,7 +25,11 @@ function addDiv(numberOfDivsToCreate) {
 
 // change grid square color to red
 function changeColor() {
-    this.style.backgroundColor = '#06bb3e';
+    // this.style.backgroundColor = '#06bb3e';
+    const randomR = Math.floor(Math.random() * 256);
+  const randomG = Math.floor(Math.random() * 256);
+  const randomB = Math.floor(Math.random() * 256);
+  this.style.backgroundColor = `rgb(${randomR}, ${randomG}, ${randomB})`;
 }
 
 
