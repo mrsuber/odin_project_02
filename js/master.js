@@ -1,5 +1,5 @@
-var container = document.querySelector('.container');
-var button = document.getElementById('clearButton');
+const container = document.querySelector('.container');
+const button = document.getElementById('clearButton');
 
 
 function addDiv(numberOfDivsToCreate) {
@@ -17,7 +17,7 @@ function addDiv(numberOfDivsToCreate) {
         gridSize--;
     }
 
-    var gridCells = document.querySelectorAll('.grid');
+    const gridCells = document.querySelectorAll('.grid');
     gridCells.forEach(cell => cell.addEventListener('mouseenter', changeColor));
     console.log(gridCellDimensions);
     console.log('Grid has been created!!')
@@ -35,7 +35,7 @@ function changeColor() {
 
 // clear grid + prompt for new grid size
 function clear() {
-    var reqGridSize = prompt('How many squares per side?');
+    const reqGridSize = prompt('How many squares per side?');
 
     if (reqGridSize >= 1 && reqGridSize <= 100) {
         while (container.hasChildNodes()) {
